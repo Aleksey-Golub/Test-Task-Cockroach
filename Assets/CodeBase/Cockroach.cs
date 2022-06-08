@@ -24,13 +24,13 @@ namespace Assets.CodeBase
             MoveTo(target);
         }
 
-        public void GetScared(Vector3 position)
+        public void GetScared(Vector3 dangerPosition)
         {
             if (_isScared)
                 return;
 
             _isScared = true;
-            CalculateSafePoint(position);
+            CalculateSafePoint(dangerPosition);
         }
 
         private void CalculateSafePoint(Vector3 dangerPosition)
