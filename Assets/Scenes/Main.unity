@@ -1339,6 +1339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _uiController: {fileID: 792327794}
   _dangerCursor: {fileID: 500644120}
+  _finishTrigger: {fileID: 1823048306}
 --- !u!4 &2134384084
 Transform:
   m_ObjectHideFlags: 0

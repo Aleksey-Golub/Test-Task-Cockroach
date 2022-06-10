@@ -7,6 +7,7 @@ namespace Assets.CodeBase.Infrastructure
     {
         [SerializeField] private UIController _uiController;
         [SerializeField] private DangerCursor _dangerCursor;
+        [SerializeField] private FinishTrigger _finishTrigger;
 
         private SceneLoader _sceneLoader;
 
@@ -23,7 +24,7 @@ namespace Assets.CodeBase.Infrastructure
         private void Initialize()
         {
             _sceneLoader = new SceneLoader();
-            FindObjectOfType<FinishTrigger>().Reached += OnFinishTriggerReached;
+            _finishTrigger.Reached += OnFinishTriggerReached;
 
             _uiController.Counstruct(this);
         }
