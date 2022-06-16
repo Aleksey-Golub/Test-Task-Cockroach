@@ -1,5 +1,5 @@
-using Assets.CodeBase;
 using System;
+using Assets.CodeBase;
 using UnityEngine;
 
 public class FinishTrigger : MonoBehaviour

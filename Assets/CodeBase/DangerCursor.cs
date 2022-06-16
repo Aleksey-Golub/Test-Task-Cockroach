@@ -47,7 +47,7 @@ namespace Assets.CodeBase
 
         private void OnTriggerStay2D(Collider2D collision)
         {
-            if(collision.attachedRigidbody.TryGetComponent(out Cockroach cockroach))
+            if (collision.attachedRigidbody.TryGetComponent(out Cockroach cockroach))
             {
                 cockroach.GetScared(transform.position);
             }

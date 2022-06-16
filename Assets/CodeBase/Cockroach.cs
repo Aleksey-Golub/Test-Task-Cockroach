@@ -36,7 +36,7 @@ namespace Assets.CodeBase
         private void CalculateSafePoint(Vector3 dangerPosition)
         {
             Vector3 direction = (transform.position - dangerPosition).normalized;
-            _safePoint = transform.position + direction * _safeDistance;
+            _safePoint = transform.position + (direction * _safeDistance);
         }
 
         private bool IsArrivedTo(Vector3 position)
